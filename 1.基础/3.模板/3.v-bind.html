@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <span v-bind:id="id"></span>
+    <button v-bind:disabled="isButtonDisabled">Button</button>
+    <a v-bind:href="url">google</a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            id: '1232',
+            isButtonDisabled:'xx',
+            url:'https://www.google.com'
+        }
+    })
+</script>
+</body>
+</html>

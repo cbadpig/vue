@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <p>{{message}}</p>
+    <a v-on:click="doSomething">点击事件</a>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'v-on'
+        },
+        methods:{
+            doSomething:function () {
+                message = "v-on-click";
+            }
+        }
+    })
+</script>
+</body>
+</html>
